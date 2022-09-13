@@ -3,8 +3,47 @@
     padding: 0;
 }
 
+.container {
+    max-width: 1025px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
 
+.Title {
+    padding: 1em;
+    text-align: center;
+}
 
+.inputSearch {
+    width: 50%;
+    outline: none;
+    margin: auto;
+    align-self: center;
+    border: none;
+    border-radius: 1rem;
+    padding: 1em;
+    border: 3px solid transparent;
+    transition: border .5seg;
+}
+
+.inputSearch:focus {
+    border: 3px solid greenyellow;
+}
+
+.content_btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin: 1em;
+}
+
+.btn {
+    padding: 1em;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 .personajes {
     display: grid;
@@ -50,11 +89,5 @@
 @media (max-width: 480px){
     .personajes {
         grid-template-columns: repeat(auto-fill, 90%);
-    }
-}
-
-@media (min-width: 1250px){
-    .personajes {
-        grid-template-columns: repeat(auto-fill, 24%);
     }
 }
