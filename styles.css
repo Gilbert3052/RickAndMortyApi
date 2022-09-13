@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.personajes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 32%);
+    gap: 1em;
+    margin: 2em;
+}
+
+.personaje {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.personaje_img {
+    width: 70%;
+}
+.personaje_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.personaje h2 {
+    padding: .4em;
+}
+
+.personaje p {
+    padding: .5em;
+    padding-top: 0;
+}
+
+@media (max-width: 885px){
+    .personajes {
+        grid-template-columns: repeat(auto-fill, 48%);
+    }
+}
+
+@media (max-width: 480px){
+    .personajes {
+        grid-template-columns: repeat(auto-fill, 90%);
+    }
+}
+
+@media (min-width: 1250px){
+    .personajes {
+        grid-template-columns: repeat(auto-fill, 24%);
+    }
+}
